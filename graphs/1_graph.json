@@ -1,0 +1,15 @@
+{
+    "graph": {
+        "size" : 5,
+        "isDirected" : true,
+        "model" : "incidence-list",
+        "edges" : [
+            {"start" : 0, "finish" : 1, "length" : 1},
+            {"start" : 0, "finish" : 2, "length" : 3},
+            {"start" : 1, "finish" : 2, "length" : 1},
+            {"start" : 2, "finish" : 3, "length" : 3},
+            {"start" : 2, "finish" : 4, "length" : 2},
+            {"start" : 3, "finish" : 4, "length" : 1}
+        ]
+    }
+}

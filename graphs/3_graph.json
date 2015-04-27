@@ -1,0 +1,12 @@
+{
+    "graph": {
+        "size" : 3,
+        "isDirected" : false,
+        "model" : "incidence-list",
+        "edges" : [
+            {"start" : 0, "finish" : 1, "length" : 2},
+            {"start" : 1, "finish" : 2, "length" : 2},
+            {"start" : 2, "finish" : 0, "length" : 2}
+        ]
+    }
+}
