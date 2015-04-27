@@ -10,8 +10,10 @@ public class Main {
     public static void main(String[] args) {
 
         Graph graph = new Graph();
+        String filepath = "1_graph.json";
+
         try {
-            graph.readFromFile("graphs/secondgraph.json");
+            graph.readFromFile(filepath);
             graph.print();
             DijkstraSearchGraph dsg = new DijkstraSearchGraph(graph);
             dsg.findDistance(0,4);
