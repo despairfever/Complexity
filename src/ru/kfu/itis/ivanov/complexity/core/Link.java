@@ -1,4 +1,4 @@
-package ru.kfu.itis.ivanov.complexity;
+package ru.kfu.itis.ivanov.complexity.core;
 
 /**
  * Created by Денис on 26.04.2015. Ave furby!

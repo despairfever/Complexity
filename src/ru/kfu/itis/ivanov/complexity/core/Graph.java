@@ -1,4 +1,4 @@
-package ru.kfu.itis.ivanov.complexity;
+package ru.kfu.itis.ivanov.complexity.core;
 
 import org.json.JSONArray;
 import org.json.JSONObject;

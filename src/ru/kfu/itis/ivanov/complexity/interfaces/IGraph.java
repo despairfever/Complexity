@@ -1,6 +1,6 @@
 package ru.kfu.itis.ivanov.complexity.interfaces;
 
-import ru.kfu.itis.ivanov.complexity.Node;
+import ru.kfu.itis.ivanov.complexity.core.Node;
 
 import java.util.ArrayList;
 

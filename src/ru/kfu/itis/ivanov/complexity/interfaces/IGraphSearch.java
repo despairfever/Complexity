@@ -7,6 +7,6 @@ public interface IGraphSearch {
 
     public int findDistance(int start, int finish);
 
-    public void printResults();
+    public String getPath(int start, int finish);
 
 }
