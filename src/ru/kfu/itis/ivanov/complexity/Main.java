@@ -18,9 +18,13 @@ public class Main {
             graph.readFromFile(filepath);
             graph.print();
             DijkstraSearchGraph dsg = new DijkstraSearchGraph(graph);
+            long start = System.nanoTime();
             dsg.findDistance(0,2);
+            long finish = System.nanoTime();
+            long executionTime = finish - start;
             dsg.printResults();
             System.out.println(dsg.getPath(0,2));
+            System.out.println("Computed in " + executionTime + "ns.");
         } catch (IOException e) {
             e.printStackTrace();
         }
