@@ -13,16 +13,23 @@ import java.io.IOException;
 public class Autotester {
 
     private int testID;
-    private final String BASE_DIRECTORY = "testgraphs\\test";
-    private final String FILE_FORMAT = ".json";
-
+    private int batchID;
     private long executionTime;
+    private int distance;
     private IGraph graph;
     private IGraphSearch igs;
 
     public Autotester(IGraphSearch igs, IGraph graph) {
         this.igs = igs;
         this.graph = graph;
+    }
+
+    public int getBatchID() {
+        return batchID;
+    }
+
+    public void setBatchID(int batchID) {
+        this.batchID = batchID;
     }
 
     public int getTestID() {
@@ -39,12 +46,12 @@ public class Autotester {
 
     public void test(int id, int start, int finish) throws IOException{
 
-        String filePath = BASE_DIRECTORY + id + FILE_FORMAT;
+        String filePath = "test\\batch" + batchID + "\\test" + id + ".json";
         graph.readFromFile(filePath);
         igs.setGraph(graph);
 
         long timeStart = System.nanoTime();
-        igs.findDistance(start, finish);
+        distance = igs.findDistance(start, finish);
         long timeFinish = System.nanoTime();
         executionTime = timeFinish - timeStart;
 
@@ -56,5 +63,9 @@ public class Autotester {
 
     public void printResults() {
         igs.printResults();
+    }
+
+    public int getDistance() {
+        return distance;
     }
 }
