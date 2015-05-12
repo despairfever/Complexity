@@ -15,6 +15,11 @@ public class FloydGraphSearch implements IGraphSearch {
     }
 
     @Override
+    public void setGraph(IGraph graph) {
+
+    }
+
+    @Override
     public int findDistance(int atart, int finish) {
 
         return 11037;

@@ -15,7 +15,17 @@ public class DijkstraSearchGraph implements IGraphSearch {
     protected IGraph graph;
     protected ArrayList<Node> roots;
 
+    public DijkstraSearchGraph() {}
+
     public DijkstraSearchGraph(IGraph graph) {
+        this.graph = graph;
+        roots = new ArrayList<Node>(graph.getSize());
+        for (int i=0; i<graph.getSize(); i++) {
+            roots.add(new Node(-1));
+        }
+    }
+
+    public void setGraph(IGraph graph) {
         this.graph = graph;
         roots = new ArrayList<Node>(graph.getSize());
         for (int i=0; i<graph.getSize(); i++) {

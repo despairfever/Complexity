@@ -5,8 +5,12 @@ package ru.kfu.itis.ivanov.complexity.interfaces;
  */
 public interface IGraphSearch {
 
+    public void setGraph(IGraph graph);
+
     public int findDistance(int start, int finish);
 
     public String getPath(int start, int finish);
+
+    public void printResults();
 
 }
